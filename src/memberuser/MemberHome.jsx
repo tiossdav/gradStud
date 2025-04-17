@@ -29,7 +29,7 @@ const MemberHome = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen overflow-hidden bg-white ">
+    <div className="flex min-h-screen overflow-auto bg-white ">
       {isSidebarOpen && (
         <MemberUserSidebar onClose={() => setIsSidebarOpen(false)} />
       )}
@@ -41,7 +41,7 @@ const MemberHome = () => {
           element={<Schools isSidebarOpen={isSidebarOpen} />}
         />
         <Route
-          path="/applications"
+          path="/applications/*"
           element={<Applications isSidebarOpen={isSidebarOpen} />}
         />
       </Routes>

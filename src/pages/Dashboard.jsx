@@ -20,7 +20,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen overflow-hidden bg-gray-100 ">
+    <div className="flex min-h-screen  bg-gray-100 ">
       {isSidebarOpen && <Sidebar onClose={() => setIsSidebarOpen(false)} />}
 
       <div
